@@ -1,0 +1,18 @@
+input:invalid {
+    color: lightcoral;
+    animation: shakes 0.5s;
+      
+}
+@keyframes shakes {
+    0%{
+        transform: translatex(2px);
+    }
+    15%{
+        transform: translatex(-8px);
+    }
+    20%{
+        transform: translatex(5px);
+    }
+
+    
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    
+ }
+
+body{
+    background:  url(/collection/wallpaper.jpg)no-repeat;
+    background-size: cover;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.gridbox{
+    display: grid;
+    background: transparent;
+    /* backdrop-filter: blur(4px); */
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    width: 1200px;
+    height: 850px;
+    grid-template-columns: 190px 190px 190px 190px 190px 190px ;
+    grid-template-rows: 130px 130px 130px 130px 130px 130px 130px;
+    padding: 25px;   
+    margin-top: 60px;
+    gap: 4px 4px;
+    
+}
+/* h1{
+    color: white;
+} */
+img{
+    width: 180px;
+    margin-top: -10px;
+    transition: 0.5s ease-in-out;
+    margin-left: 12px;
+    
+}
+#photo{
+    height: 120px;
+}
+#photo_new{
+   grid-row-start: 1;
+   grid-row-end: 2;
+   grid-column-start: 1;
+   grid-column-end: 2;
+   height: 250px;
+}
+.street{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#manage{
+    height: 120px;
+}
+.second{
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+#modify{
+    height: 118px;
+    width: 370px;
+}
+.item_new{
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+#pop{
+    height: 120px;
+    width: 370px;
+}
+.item_op{
+    grid-column-start:6 ;
+    grid-column-end: 7;
+}
+#change{
+    height: 120px;
+   width: 370px;
+}
+.item_lol{
+    grid-column-start: 3 ;
+    grid-column-end: 4 ;
+}
+img:hover{
+    width: 187px;  
+    border: 1px white solid;
+   border-radius: 5px;
+   position: relative;
+   /* left: -4.2px; */
+    
+}
+/* img{
+    padding: 10px;
+} */

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="BMI.css">
+    <link rel="shortcut icon" href="Bicep2.jpg" type="image/x-icon" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Status</title>
+    <script>
+        function calBmi() {
+            var w, hf, a, hi, link;
+            w = parseInt(document.getElementById("wt").value);
+            hf = parseInt(document.getElementById("htf").value);
+            // HEIGHT IN INCHES
+            hi = parseInt(document.getElementById("hti").value);
+            // hi=hi-hf;
+            link = document.getElementById("dietlink");
+            var totalinch = (hf * 12) + hi;
+            var totalcm = totalinch * 2.53;
+            var totalmeter = totalcm / 100;
+            a = w / (totalmeter * totalmeter);
+
+            // document.getElementById("ans").value = totalinch
+           
+            // document.getElementById("ans").value=link;
+            if (a > 25) {
+                // document.getElementById("ans").value = "You are over weight";
+                alert('You are Over Weight');
+                document.getElementById("dietlink").href="https://assets.lybrate.com/q_auto:eco,f_auto,w_850/imgs/product/kwds/diet-chart/Obesity-Diet-Chart-v1.jpg";
+
+            }
+            else if (a < 18) {
+                alert("You are under weight");
+                document.getElementById("dietlink").href="https://diet2nourish.com/blog/wp-content/uploads/2021/07/Weight-Gain-Diet-Plan.jpeg";
+
+            }
+            else {
+                alert("You are Fit");
+                document.getElementById("dietlink").href="https://www.farzanaahmedbd.com/images/balanced_diet1.jpg";
+            }
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <a href="https://boysgym.netlify.app/"><ion-icon class="icon_io" name="arrow-back-outline"></ion-icon></a> 
+    <div id="left_side">
+        <video src="BMI BG5_Trim.mp4" loop autoplay muted></video>
+    </div>
+    <div id="bmi">
+        <form>
+            <h2>Check Fitness Status</h2>
+            <div class="input">
+                <span>Height</span>
+                <input type="text" id="htf" placeholder="(in Feet)" required>
+                
+            </div>
+            <div class="input">
+                <span>Height</span>
+                <input type="text" id="hti" placeholder="(in Inches)" required>
+            </div>
+            <div class="input">
+                <span>Weight</span>
+                <input type="text" id="wt" placeholder="(in KG)" required>
+            </div>
+        </form>
+        <button type="submit" onclick="calBmi()">Submit</button>
+        <a href="#" id="dietlink">Get Your Diet</a>
+    </div>
+</body>
+</html>

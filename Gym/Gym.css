@@ -1,0 +1,291 @@
+body{
+    /* background-color: black; */
+    background-image:url("Login\ Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+#body_bg_img{
+    /* box-shadow: 0 0 120px red; */
+    width: 100%;
+    opacity: 60%;
+    background-size: cover;
+    box-shadow: 0 0 10px 5px white;
+}
+#gym_logo{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 18%;
+    margin-top: -2.6%;
+    opacity: 100%;
+}
+#login_btn{
+    z-index: 1;
+    right: 5%;
+    position: absolute;
+    background-color: transparent;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: 3px solid white;
+    color: white;
+    text-decoration: none;
+    margin-top: 2%;
+    padding: 0.3%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: calc(100%);
+    transition:  0.3s;
+}
+#login_btn:hover{
+    font-weight:bolder;
+    border: 3px solid white;
+    border-radius: 20px;
+    color: white;
+    background-color: transparent;
+    font-size: calc(100%);
+    right: 5%;
+}
+video{
+    width: 100%;
+    opacity: 100%;
+}
+/* .view_online{
+    align-items: center;
+    border-radius: 5%;
+    border: 2px double white;
+    background-color: red;
+    text-decoration: none;
+    font-size: calc(140%);
+    padding: 0.3%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 45%;
+    color: white;
+    transition-duration: 0.4s;
+} */
+/* .view_online:hover{
+    background-color: transparent;
+    color: red;
+    border: 2px double red;
+} */
+#main_div{
+    position:relative;
+    background: transparent;
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+    border: 2px solid white;
+    margin: 5%;
+    margin-top: -59%;
+    padding-bottom: 10%;
+    opacity: 180%;
+    /* box-shadow: 0 0 2px 2px white; */
+}
+#ben_div{
+    margin-top: -42%;
+    margin-left: 56.12%;
+    margin-bottom: -5%;
+    padding-left: 2%;
+    text-align: center;
+    font-size: calc(100%);
+}
+#ben_div_img{
+    width: 52%;
+    margin: 4%;
+    border: 2px solid white;
+    border-radius: 50px;
+    /* box-shadow: 0 0 2px 2px white; */
+}
+div div h1{
+    padding-bottom: 5%;
+    color: black;
+    text-decoration: underline;
+    font-size: calc(350%);
+}
+li{
+    color: white;
+    margin-bottom: 5%;
+    font-size: calc(200%);
+    list-style-type:none ;
+}
+#view_img{
+    border: 2px solid white;
+    border-radius: 20px;
+    border-width: 0.8px;
+    /* background: url("gym.jpg"); */
+    background-size: cover;
+    backdrop-filter: blur(15px);
+    margin-top: 2%;
+    padding: 4%;
+    box-align: flex center;
+}
+.slider_imgs{
+    margin-left: 0.6%;
+    box-shadow: 5px 5px white;
+    width: 17%;
+    border-radius: 13%;
+    transition-duration: 0.16s;
+}
+.slider_imgs:hover{
+    margin: 1.2%;
+    width: +25%;
+}
+#gym_amenities{
+    /* background-image:url("Body\ Backgroung\ Img.jpg"); */
+    background: url("biceps.jpg")no-repeat;
+    background-size: 200% ;
+    /* background-size: 100%; */
+    /* height: 300%; */
+    height: fit-content;
+    margin-top: -4.7%;
+    /* box-shadow: 0 0 120px red; */
+    justify-content: center;
+    width: 100%;
+    /* background-color: grey; */
+    /* background: radial-gradient(rgb(195, 195, 195), rgb(161, 161, 161), grey, black) ; */
+    /* color: black; */
+}
+/* #gym_amenities:hover{
+    transition-duration: 3s;
+    background: radial-gradient(rgb(195, 195, 195), rgb(161, 161, 161), grey, black) ;
+} */
+#gym_amenities h2{
+    text-decoration: underline;
+    color: white;
+    margin-left: 32%;
+    text-shadow: 0 2px 2px black;
+    padding: 2%;
+    padding-top: +5%;
+    font-size: calc(510%);
+    font-weight: 700%;
+}
+.grid_set{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.icon{
+    filter: invert(100%);
+    border-radius: 50%;
+    padding: 0%;
+    font-size: 30px;
+    text-align: center;
+    transition-duration: 0.2s;
+}
+.icon:hover{
+    /* background-color: red; */
+    background: linear-gradient(135deg,lightblue,transparent) pink;
+    box-shadow: 0 0 80px black;
+    border: 1px solid black;
+}
+.grid_set{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.amenities_name{
+    width: 100%;
+    text-align: center;
+    margin-top: -2%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: calc(250%);
+    font-weight: bold;
+}
+.amenities_name p{
+    color: white;
+    width: 100%;
+    transition-duration: 0.34s;
+}
+.amenities_name p:hover{
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px white;
+    color: red;
+    text-shadow: 1px 1px black;
+    /* border: 3px solid black; */
+    background: linear-gradient(270deg, rgb(219, 78, 219), transparent) cyan;
+}
+.language{
+    font-family: Lilita One;
+    font-size: 30px;
+    
+}
+footer{
+    display:flex;
+    justify-content:center;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    background-color: black;
+    margin-left: -2%;
+    font-size: calc(110%);
+    /* border:2px dotted white; */
+    box-shadow: 0 0 2px 2px white
+}
+footer h3{
+color: tomato;
+font-size: calc(160%);
+/* border :2px solid red; */
+}
+.fitem a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin-bottom: 20%;
+}
+.fitem a:hover{
+    text-decoration: underline tomato;
+}
+.icon_io{
+    z-index: 1;
+    color: white;
+    position: absolute;
+    position:absolute;
+    left: 40px;
+    top: 40px;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    width: 2.2%;
+    height: 3.8%;
+    transition: 0.31s;
+    cursor: pointer;
+    background-color: white;
+}
+.container {
+    position: absolute;
+    top: 100px;
+    left: 17%;
+    right: 20%;
+    z-index: 1;
+    text-align: center;
+    height: 60%;
+    width: 70%;
+}
+
+nav a {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin: 2%;
+
+}
+
+nav a:hover {
+    color: red;
+    transition: .25s;
+}
+
+.txt {
+    position: relative;
+    top: 120%;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+}
+
+.txt h1 {
+    font-size: 30px;
+}
+
+.txt p {
+    font-size: 25px;
+}

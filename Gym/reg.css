@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:  url("bodyimage.jpg")no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+.box{
+    position: relative;
+    width: 380px;
+    height: 480px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    box-shadow: 0 0 50px  white;
+    /* margin-right: 400px; */
+    /* transition:  letter-spacing 0.5s; */
+
+}
+
+.box form{
+    position: absolute;
+    padding: 50px 40px;
+    inset: 4px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    color: white;
+    font-weight: 600;
+    position: relative;
+    top: -15px;
+    text-decoration: underline;
+}
+.input-box{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+
+}
+input{
+      position: relative;
+      width: 100%;
+      padding: 10px 8px 8px;
+      background: transparent;
+      outline: none;
+      color: black;
+      font-size: 1em;
+      letter-spacing: 0.10em;
+      z-index: 10;
+      transition: 0.5s;
+      border: none;
+      /* border-bottom: 2px solid white; */
+}
+
+label{
+    position: absolute;
+    left: 0px;
+    padding: 20px 10px 40px;
+    margin: -10px;
+    pointer-events: none;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+    color: white;
+    font-size: 0.75em;
+    transform: translateY(-34px);  
+} 
+
+button{
+    position: relative;
+    margin-top: 60px;
+    height: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.8s;
+
+}
+i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px white solid;
+    border-radius: 4px;
+    overflow: hidden;
+    pointer-events: none;
+    transition: 0.5s;
+
+}
+input:valid ~ i,
+input:focus ~ i{
+    height: 44px;
+    background: white;
+}
+input:focus ~ .check,
+input:invalid  ~ .check .change{
+    position: fixed;
+    height: 44px fixed;
+}
+ion-icon{
+    color: white;
+    position: absolute;
+    left: 275px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+}
+.icon_io{
+    position:absolute;
+    left: 20px;
+    top: 40px;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    width: 5%;
+    height: 5%;
+    transition: 0.5s,transform 0.6s;
+    cursor: pointer;
+}
+.icon_io:hover{
+    background: white;
+    color: black;
+    /* backdrop-filter: blur(36px); */
+
+}
+button:hover{
+    background: transparent;
+    border: 1px solid white;
+    border-width: 3px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+ 
+/* @media (max-width:800px){
+    #sett{
+        width: 500%;
+    }
+    
+} */
+@media (max-width:400px) and (max-height:700px) {
+    #sett{
+        display: flex;
+        width: 100%;
+        margin-left: 40px;
+        margin-right: 40px;
+        /* padding-right: 40px; */
+    }
+    #sett_one{
+        display: flex;
+        width: 100%;
+    }
+    body{
+        background-size: cover;
+        background-position: -350px;
+    }
+    #pop{
+        display: flex;
+        left: 185px;
+    }
+    #oo{
+        width: 50px;
+        margin-top: -8px;
+
+    }
+    
+}
+@media (max-width:600px) and (max-height:800px) {
+    body{
+            background-position: calc(-310px);
+    }
+    #oo{
+        width: 50px ;
+    }
+    
+}
+.icon_io:hover,
+.icon_io:focus-visible{
+    transform: translateY(-0.75rem);
+}
+input:invalid {
+    color: lightcoral;
+    animation: shakes 0.5s;
+      
+}
+@keyframes shakes {
+    0%{
+        transform: translatex(2px);
+    }
+    15%{
+        transform: translatex(-8px);
+    }
+    20%{
+        transform: translatex(5px);
+    }
+
+    
+}
+/* input:invalid ~ #gg{
+    position: fixed;
+    transform: translateX(-34px);
+    
+} */
+
+
+
+
+
