@@ -21,13 +21,12 @@ body{
     /* backdrop-filter: blur(4px); */
     /* border: 1px solid white; */
     border-radius: 10px;
-    width: 1280px;
+    width: 1200px;
     height: 850px;
     grid-template-columns: 190px 190px 190px 190px 190px 190px ;
     grid-template-rows: 130px 130px 130px 130px 130px 130px 130px;
-    padding: 35px;   
-    margin-top: 170px;
-    margin-left: calc(-330px);
+    padding: 25px;   
+    margin-top: 60px;
     gap: 4px 4px;
     
 }
@@ -39,7 +38,7 @@ img{
     margin-top: -10px;
     transition: 0.5s;
     margin-left: 12px;
-    border: 2px solid white; 
+    
 }
 #photo{
     height: 120px;
@@ -89,7 +88,7 @@ img{
 img:hover{
     width: 191px;  
     border: 1px white solid;
-   border-radius: 8px;
+   border-radius: 5px;
    position: relative;
    left: -3px;
     
@@ -97,37 +96,3 @@ img:hover{
 /* img{
     padding: 10px;
 } */
-h1{
-    position: relative;
-    color: white;
-    top: -410px;
-    left: 260px;
-    font-size: calc(55px);
-    text-decoration: underline;
-   
-    
-    /* align-items: ; */
-}
-.icon_io{
-    z-index: 1;
-    color: white;
-    position: absolute;
-    position:absolute;
-    left: 40px;
-    top: 40px;
-    border: 2px solid white;
-    border-radius: 20px;
-    display: flex;
-    width: 2.2%;
-    height: 3.8%;
-    transition: 0.31s;
-    cursor: pointer;
-}
-.icon_io:hover{
-    background: white;
-    color: black;
-    width: 3%;
-    height: 3.6%;
-    left: 33.3px;
-    /* backdrop-filter: blur(36px); */
-}
